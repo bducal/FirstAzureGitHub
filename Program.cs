@@ -27,7 +27,7 @@ namespace PhotoSharingApp
             var blobs = container.GetBlobs();
             foreach (var blob in blobs)
             {
-                Console.WriteLine($"{blob.Name} --> Stworzony: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Rozmiar: {blob.Properties.ContentLength}");
+                Console.WriteLine($"Plik: {blob.Name} --> Stworzony: {blob.Properties.CreatedOn:yyyy-MM-dd HH:mm:ss}  Rozmiar: {blob.Properties.ContentLength}");
             }
         }
     }
